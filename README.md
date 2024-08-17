@@ -42,7 +42,7 @@ calculate-areas --image 'path/to/image.jpg' \
                  --output 'output_areas.csv'
 ```
 
-### Command-Line Options
+Command-Line Options
 - `-i, --image`: Path to the input image or PDF file. This is required.
 - `-l, --ref_length`: The length of the reference object in centimeters. This is required to calculate the scale.
 - `-t, --threshold_value`: The threshold value for binarization (default is 127). Adjust if needed for better contour detection.
