@@ -50,7 +50,6 @@ calculate-areas --image 'path/to/image.jpg' \
                  --output 'output_areas.csv'
 ```
 
-=======
 Command-Line Options
 - `-i, --image`: Path to the input image or PDF file. This is required.
 - `-l, --ref_length`: The length of the reference object in centimeters. This is required to calculate the scale.
@@ -65,19 +64,3 @@ The development of this application draws upon various Python libraries, particu
 
 ### Author
 [Dr. Clabe Wekesa](https://www.ice.mpg.de/246268/group-members) 
-
-### Command-Line Options
-`-i, --image`: Path to the input image or PDF file. This is required.
-`-l, --ref_length`: The length of the reference object in centimeters. This is required to calculate the scale.
-`-t, --threshold_value`: The threshold value for binarization (default is 127). Adjust if needed for better contour detection.
-`-m, --maxval`: The maximum value for binary thresholding (default is 255).
-`-a, --area_threshold`: Minimum contour area in pixels to consider (default is 200). Adjust to filter out smaller contours.
-`-R, --rotation_angle`: Angle to rotate the image in degrees (default is 0). Use this if the image needs to be rotated.
-`-o, --output`: Path to save the CSV file with contour areas (default is derived from the image name).  
-`-d, --outdir`: Output directory (for processed image, contour mask, CSV)
-
-### Acknowledgment
-The development of this application draws upon various Python libraries, particularly OpenCV for image processing and pdf2image for handling PDF files. These tools are critical for enabling the image manipulation and analysis capabilities of this package.
-
-### Author
-[Dr. Clabe Wekesa](https://www.ice.mpg.de/246268/group-members)
