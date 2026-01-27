@@ -3,9 +3,9 @@
 This Python application is a versatile tool designed for calculating the real-world areas of contours in an image by referencing a known object for scaling. Built with OpenCV for powerful image processing, this tool can handle both standard image files and PDFs (with automatic conversion to images if needed). Users can accurately measure areas in square centimeters by selecting points on an object of known length within the image.
 
 The application is fully command-line driven, making it ideal for automation, scripting, and integration into larger workflows. With just a few command-line options, users can specify input files, set image processing parameters, rotate images, and output the results to CSV files for further analysis. Whether you're working with scanned documents, photos, or any other images containing measurable objects, this tool offers a straightforward and efficient solution for area measurement.
-=======
+
 This Python application provides a tool for calculating the real-world areas of contours in an image using a known object in the image for scaling. The application is built with OpenCV for image processing and includes functionality for converting PDF files to images if needed. Users can easily calculate areas in square centimeters by simply selecting points on an object of known length in the image.
-=======
+
 This Python application is a versatile tool designed for calculating the real-world areas of contours in an image by referencing a known object for scaling. Built with OpenCV for powerful image processing, this tool can handle both standard image files and PDFs (with automatic conversion to images if needed). Users can accurately measure areas in square centimeters by selecting points on an object of known length within the image.
 
 The application is fully command-line driven, making it ideal for automation, scripting, and integration into larger workflows. With just a few command-line options, users can specify input files, set image processing parameters, rotate images, and output the results to CSV files for further analysis. Whether you're working with scanned documents, photos, or any other images containing measurable objects, this tool offers a straightforward and efficient solution for area measurement.
@@ -65,7 +65,7 @@ The development of this application draws upon various Python libraries, particu
 
 ### Author
 [Dr. Clabe Wekesa](https://www.ice.mpg.de/246268/group-members) 
-=======
+
 ### Command-Line Options
 `-i, --image`: Path to the input image or PDF file. This is required.
 `-l, --ref_length`: The length of the reference object in centimeters. This is required to calculate the scale.
@@ -75,11 +75,9 @@ The development of this application draws upon various Python libraries, particu
 `-R, --rotation_angle`: Angle to rotate the image in degrees (default is 0). Use this if the image needs to be rotated.
 `-o, --output`: Path to save the CSV file with contour areas (default is derived from the image name).  
 `-d, --outdir`: Output directory (for processed image, contour mask, CSV)
-=======
 
 ### Acknowledgment
 The development of this application draws upon various Python libraries, particularly OpenCV for image processing and pdf2image for handling PDF files. These tools are critical for enabling the image manipulation and analysis capabilities of this package.
 
 ### Author
 [Dr. Clabe Wekesa](https://www.ice.mpg.de/246268/group-members)
-=======
