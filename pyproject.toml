@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "image_area_calculator"
+version = "0.2.0"
+description = "A package to calculate real-world areas of contours in images using an image of known length for scaling."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [
+    { name = "Clabe Wekesa", email = "simiyu86wekesa@gmail.com" }
+]
+keywords = [
+    "image processing",
+    "contours",
+    "area calculation",
+    "opencv"
+]
+
+# Allow all future Python 3.x versions (including 3.13)
+requires-python = ">=3.6"
+
+dependencies = [
+    "click",
+    "opencv-python",
+    "numpy",
+    "pdf2image"
+]
+
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Operating System :: OS Independent"
+]
+
+[project.urls]
+Homepage = "https://github.com/clabe-wekesa/image-area-calculator"
+Source = "https://github.com/clabe-wekesa/image-area-calculator"
+Issues = "https://github.com/clabe-wekesa/image-area-calculator/issues"
+
+[project.scripts]
+calculate-areas = "image_area_calculator.image_area_calculator:calculate_real_world_areas"
+
+[tool.setuptools]
+packages = ["image_area_calculator"]
